@@ -33,7 +33,7 @@ Options:
   if (!name) {
     // Derive name from input filename or URL path
     const basename = input.split("/").pop()!.split("?")[0];
-    name = basename.replace(/\.svg$/i, "");
+    name = basename.replace(/\.svg$/i, "").replace(/\.sfsymbol$/i, "");
   }
 
   if (!output) {
